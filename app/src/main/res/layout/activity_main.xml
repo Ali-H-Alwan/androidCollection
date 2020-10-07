@@ -68,10 +68,10 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CustomNotificationCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:id="@+id/CustomNotificationCard"
                 android:layout_weight="1"
                 app:cardCornerRadius="5dp"
                 app:cardElevation="5dp">
@@ -108,6 +108,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/CollapsingCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -134,7 +135,7 @@
                         android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
                         android:padding="10dp"
-                        android:text="@string/travel"
+                        android:text="@string/collapsing"
                         android:textAlignment="center" />
 
                 </LinearLayout>

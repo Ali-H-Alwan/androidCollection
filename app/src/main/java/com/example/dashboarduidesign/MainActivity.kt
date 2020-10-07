@@ -24,5 +24,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var CollapsingCard = findViewById<CardView>(R.id.CollapsingCard);
+        CollapsingCard.setOnClickListener {
+            val intent = Intent(this, CollapsingActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 }

@@ -16,7 +16,6 @@ import java.util.concurrent.Executor;
 public class fingureActivity extends AppCompatActivity {
 
     Button btnLoginFingurePrint;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

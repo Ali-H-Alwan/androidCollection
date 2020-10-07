@@ -7,6 +7,14 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".CustomNotificationActivity">
+    <Button
+        android:id="@+id/btnShowSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+       android:background="@color/colorAccent"
+        android:layout_margin="20dp"
+        android:text="Show Simple Notification" />
 
     <Button
         android:id="@+id/btnShow"
@@ -14,4 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Show Custom Notification" />
+
+
 </LinearLayout>

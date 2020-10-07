@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CustomNotificationActivity"></activity>
+        <activity android:name=".CollapsingActivity"></activity>
+        <activity android:name=".CustomNotificationActivity" />
         <activity android:name=".fingureActivity" />
         <activity android:name=".FingurPrintActivity" />
         <activity android:name=".MainActivity">

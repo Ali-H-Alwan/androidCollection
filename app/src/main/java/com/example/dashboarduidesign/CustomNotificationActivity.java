@@ -18,7 +18,9 @@ import android.widget.RemoteViews;
 public class CustomNotificationActivity extends AppCompatActivity {
 
     public static final String CHANNEL_ID = "NotificationChannelForMe";
+    public final int NOTIFICATION_ID = 1000;
     Button btnShow;
+    Button btnShowSimple;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +28,32 @@ public class CustomNotificationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_custom_notification);
 
         btnShow = findViewById(R.id.btnShow);
+        btnShowSimple = findViewById(R.id.btnShowSimple);
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 CustomNotification();
             }
         });
+        btnShowSimple.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SimpleNotification();
+            }
+        });
+
+
+    }
+
+    public void SimpleNotification() {
+        notificationChannel();
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.ic_education);
+        builder.setContentTitle("Simple Title");
+        builder.setContentText("Simple Content");
+        builder.setPriority(NotificationCompat.PRIORITY_HIGH);
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(this);
+        managerCompat.notify(NOTIFICATION_ID, builder.build());
     }
 
     public void CustomNotification() {

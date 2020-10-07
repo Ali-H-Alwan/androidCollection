@@ -9,5 +9,6 @@
     <string name="fitness">Fitness</string>
     <string name="customNotification">Custom Notification</string>
     <string name="gaming">Gaming</string>
+    <string name="collapsing">Collapsing </string>
     <string name="fingerprint">Use Your Fingerprint To Access</string>
 </resources>
