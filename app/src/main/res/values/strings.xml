@@ -12,4 +12,5 @@
     <string name="collapsing">Collapsing </string>
     <string name="fingerprint">Use Your Fingerprint To Access</string>
     <string name="singup">SingUp</string>
+    <string name="bottom_sheet">Bottom Sheet</string>
 </resources>

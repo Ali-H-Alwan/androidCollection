@@ -182,6 +182,7 @@
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/BottomSheetCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -208,7 +209,7 @@
                         android:layout_marginTop="10dp"
                         android:gravity="center_horizontal"
                         android:padding="10dp"
-                        android:text="@string/gaming"
+                        android:text="@string/bottom_sheet"
                         android:textAlignment="center" />
 
                 </LinearLayout>

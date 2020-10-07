@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        var BottomSheetCard = findViewById<CardView>(R.id.BottomSheetCard);
+        BottomSheetCard.setOnClickListener {
+            val intent = Intent(this, BottomSheetActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }
