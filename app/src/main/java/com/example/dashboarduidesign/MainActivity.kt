@@ -29,6 +29,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CollapsingActivity::class.java)
             startActivity(intent)
         }
+        var SigninCard = findViewById<CardView>(R.id.SigninCard);
+        SigninCard.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
